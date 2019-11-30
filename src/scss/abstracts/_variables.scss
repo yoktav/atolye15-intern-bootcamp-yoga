@@ -19,10 +19,10 @@ $g-link-hover-decoration: underline !default;
 // -------------------------
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$g-font-size-root: 18px !default; // stylelint-disable-line meowtec/no-px
+$g-font-size-root: 16px !default; // stylelint-disable-line meowtec/no-px
 
 // stylelint-disable-next-line meowtec/no-px
-$g-font-size-base-px: 18px;
+$g-font-size-base-px: 16px;
 $g-font-size-base: px-to-rem($g-font-size-base-px) !default;
 $g-font-family-sans-serif: 'CircularStd', sans-serif !default;
 $g-font-family-base: $g-font-family-sans-serif !default;
