@@ -1,0 +1,17 @@
+<div class="c-jumbotron" style="background-image: url({{ bg_image_url }});">
+  <div class="c-jumbotron__content">
+    <div class="container">
+      <div class="row">
+        <div class="col col--md-4">
+          <h1 class="c-jumbotron__header">{{ header }}</h1>
+          <p class="c-jumbotron__description">{{ description }}</p>
+          {% include "../c-button/c-button.twig" with {
+            href: button_href,
+            modifier_class: 'c-button--primary c-button--large',
+            content: button_content,
+          } only %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

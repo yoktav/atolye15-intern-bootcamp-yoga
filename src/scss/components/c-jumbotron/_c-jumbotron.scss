@@ -1,0 +1,16 @@
+.c-jumbotron {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $color-white;
+  &__header {
+    margin-bottom: 0;
+  }
+  &__description {
+    margin-top: px-to-rem(32px);
+    margin-bottom: px-to-rem(48px);
+  }
+}
