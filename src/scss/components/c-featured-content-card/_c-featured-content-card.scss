@@ -1,0 +1,34 @@
+.c-featured-content-card {
+  padding-right: px-to-rem(8px);
+  padding-left: px-to-rem(8px);
+  border-radius: $g-border-radius;
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__meta-info {
+    margin: px-to-rem(24px) px-to-rem(8px);
+    color: color-palette('gray', 500);
+    font-size: px-to-rem(14px);
+    font-weight: 400;
+  }
+  &__header {
+    margin: 0 px-to-rem(8px);
+    color: color-palette('primary', 500);
+    font-size: px-to-rem(18px);
+    font-weight: 400;
+    line-height: 1.44;
+  }
+  &__description {
+    min-height: px-to-rem(80px);
+    margin: px-to-rem(8px);
+    font-size: px-to-rem(16px);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  &__link {
+    margin-left: px-to-rem(8px);
+    display: inline-flex;
+    align-items: center;
+  }
+}
