@@ -13,5 +13,6 @@
     "@objects": "${workspaceRoot}/src/objects",
     "@templates": "${workspaceRoot}/src/templates"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
