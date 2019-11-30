@@ -1,0 +1,11 @@
+.c-section-line {
+  display: flex;
+  align-items: center;
+  &::before {
+    width: px-to-rem(4px);
+    height: px-to-rem(56px);
+    margin-right: px-to-rem(24px);
+    background-color: color-palette('primary', 500);
+    content: '';
+  }
+}
