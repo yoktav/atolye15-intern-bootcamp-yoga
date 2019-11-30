@@ -1,0 +1,72 @@
+@import '../../../../node_modules/buttono/buttono';
+
+$buttono-font-family: $g-font-family-base;
+$buttono-border-radius: px-to-rem(4px);
+$buttono-font-size: px-to-rem($g-font-size-base-px - 4px);
+$buttono-padding: px-to-rem(8px) px-to-rem(32.5px);
+$buttono-border-width: px-to-rem(1px);
+
+.c-button {
+  @include buttono-block($display: inline-flex);
+  height: px-to-rem(48px);
+  align-items: center;
+
+  &--small {
+    height: px-to-rem(44px);
+    font-size: px-to-rem($g-font-size-base-px - 4px);
+  }
+
+  &--large {
+    height: px-to-rem(56px);
+    font-size: px-to-rem($g-font-size-base-px);
+  }
+
+  &--primary {
+    @include buttono-style-modifier(
+      $background-color: color-palette('primary', 500),
+      $background-color-hover: color-palette('primary', 600),
+      $color: $color-white,
+      $border-color: $primary-color
+    );
+    &:active {
+      background-color: color-palette('primary', 700);
+      color: $color-white;
+      border-color: currentColor;
+    }
+  }
+
+  &--outline {
+    @include buttono-style-modifier(
+      $background-color: $color-white,
+      $background-color-hover: color-palette('primary', 50),
+      $color: $primary-color,
+      $color-hover: color-palette('primary', 500),
+      $border-color: $primary-color
+    );
+
+    &:active {
+      background-color: color-palette('primary', 100);
+      color: $primary-color;
+    }
+  }
+
+  &--ghost {
+    @include buttono-style-modifier(
+      $background-color: $color-white,
+      $background-color-hover: color-palette('primary', 50),
+      $color: $primary-color,
+      $color-hover: color-palette('primary', 500)
+    );
+
+    &:active {
+      background-color: color-palette('primary', 100);
+      color: $primary-color;
+    }
+  }
+
+  &.is-disabled,
+  &:disabled,
+  &[aria-disabled='true'] {
+    opacity: 0.5;
+  }
+}
