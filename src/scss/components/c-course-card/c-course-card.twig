@@ -1,0 +1,19 @@
+<div class="c-course-card {{ modifier_class }}">
+  <img src="{{ img_src }}" alt="{{ img_alt }}" srcset="{{ img_src2x }} 2x"
+    {% if img_alignment=='right' %}
+    class="c-course-card__image c-course-card__image--right"
+    {% else %} class="c-course-card__image"
+    {% endif %}
+  width="466">
+  <div class="c-course-card__content">
+    <div class="c-course-card__sup-header">{{ sup_header }}</div>
+    <h4 class="c-course-card__header">{{ header }}</h4>
+    <p class="c-course-card__description">{{ description }}</p>
+    {% include "../c-button/c-button.twig" with {
+      href: button_href,
+      modifier_class: button_modifier_class,
+      content: button_content,
+    only} %}
+  </div>
+</div>
+

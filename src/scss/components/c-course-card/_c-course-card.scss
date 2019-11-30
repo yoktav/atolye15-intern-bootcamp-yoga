@@ -1,0 +1,45 @@
+.c-course-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+  &__image {
+    width: px-to-rem(466px);
+    height: auto;
+    order: 0;
+    margin-right: px-to-rem(120px);
+    border-radius: $g-border-radius;
+    @include media-breakpoint-down(md) {
+      width: px-to-rem(350px);
+      margin-bottom: px-to-rem(20px);
+    }
+    @include media-breakpoint-down(sm) {
+      width: px-to-rem(200px);
+    }
+    &--right {
+      order: 2;
+      margin-right: unset;
+      margin-left: px-to-rem(120px);
+      @include media-breakpoint-down(md) {
+        order: 0;
+        margin-left: unset;
+      }
+    }
+  }
+  &__sup-header {
+    color: color-palette('primary', 500);
+  }
+  &__content {
+    order: 1;
+  }
+  &__header {
+    font-weight: 400;
+    line-height: 1.33;
+  }
+  &__description {
+    margin-bottom: px-to-rem(24px);
+    line-height: 1.5;
+  }
+}
