@@ -8,10 +8,12 @@
   color: $color-white;
   &__header {
     margin-bottom: 0;
+    line-height: 1.17;
   }
   &__description {
     margin-top: px-to-rem(32px);
     margin-bottom: px-to-rem(48px);
     font-size: px-to-rem(18px);
+    line-height: 1.56;
   }
 }
