@@ -150,6 +150,12 @@ $container-max-widths: (
 $grid-columns: 12 !default;
 $grid-gutter-width: px-to-rem(32px) !default;
 
+// Borders
+//
+//
+
+$g-border-radius: px-to-rem(4px);
+
 //
 // Z-index
 // Site genelinde kullanılan z-indexler burada tanımlanmalıdır
