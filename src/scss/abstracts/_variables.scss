@@ -32,7 +32,7 @@ $g-font-size-h2: px-to-em(40px) !default;
 $g-font-size-h3: px-to-em(32px) !default;
 $g-font-size-h4: px-to-em(24px) !default;
 $g-font-size-h5: px-to-em(18px) !default;
-$g-font-size-h6: 1rem !default;
+$g-font-size-h6: 1em !default;
 
 // Unit-less `line-height` for use in components like buttons.
 $g-line-height-base: (24 / 18) !default; // 20/14
