@@ -17,6 +17,9 @@
     &.is-disabled {
       opacity: 1;
     }
+    & .c-swiper-arrows__arrow {
+      transition: opacity ($g-transition-duration / 2) ease-in-out;
+    }
     &.swiper-button-disabled .c-swiper-arrows__arrow,
     &.is-disabled .c-swiper-arrows__arrow {
       opacity: 0.3;
