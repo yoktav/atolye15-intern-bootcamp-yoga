@@ -1,0 +1,25 @@
+.c-swiper-arrows {
+  display: flex;
+  align-items: center;
+  font-size: px-to-rem(20px);
+  &__arrow-box {
+    position: unset;
+    display: flex;
+    width: px-to-rem(32px);
+    height: px-to-rem(32px);
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: px-to-rem(8px);
+    background-color: color-palette('gray', 100);
+    background-image: unset;
+    &.swiper-button-disabled,
+    &.is-disabled {
+      opacity: 1;
+    }
+    &.swiper-button-disabled .c-swiper-arrows__arrow,
+    &.is-disabled .c-swiper-arrows__arrow {
+      opacity: 0.3;
+    }
+  }
+}
