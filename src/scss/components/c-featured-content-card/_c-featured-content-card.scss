@@ -11,6 +11,8 @@
     color: color-palette('gray', 500);
     font-size: px-to-rem(14px);
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
   }
   &__header {
     margin: 0 px-to-rem(8px);
