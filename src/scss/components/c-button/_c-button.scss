@@ -1,7 +1,7 @@
 @import '../../../../node_modules/buttono/buttono';
 
 $buttono-font-family: $g-font-family-base;
-$buttono-border-radius: px-to-rem(4px);
+$buttono-border-radius: $g-border-radius;
 $buttono-font-size: px-to-rem($g-font-size-base-px - 4px);
 $buttono-padding: px-to-rem(8px) px-to-rem(32.5px);
 $buttono-border-width: px-to-rem(1px);
