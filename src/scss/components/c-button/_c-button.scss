@@ -30,8 +30,8 @@ $buttono-border-width: px-to-rem(1px);
     );
     &:active {
       background-color: color-palette('primary', 700);
-      color: $color-white;
       border-color: currentColor;
+      color: $color-white;
     }
   }
 
