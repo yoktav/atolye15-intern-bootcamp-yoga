@@ -1,0 +1,26 @@
+//
+// Fonts
+// --------------------------------------------------
+
+//
+// Font Weights
+// -------------------------
+// 100 = thin
+// 200 = extra-light
+// 300 = light
+// 400 = normal, book
+// 500 = medium
+// 600 = semibold, demibold
+// 700 = bold
+// 800 = heavy
+// 900 = black
+
+//
+//  Mixin Usage
+//  @include font-face($fontName, $fontFolder, $fontFileName, $fontWeight: normal, $fontStyle: normal);
+//
+
+@include font-face(CircularStd-Black, '../fonts', CircularStd-Black, 900, normal);
+@include font-face(CircularStd-Bold, '../fonts', CircularStd-Bold, 700, normal);
+@include font-face(CircularStd-Medium, '../fonts', CircularStd-Medium, 500, normal);
+@include font-face(CircularStd-Book, '../fonts', CircularStd-Book);

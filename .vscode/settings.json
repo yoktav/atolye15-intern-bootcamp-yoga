@@ -1,0 +1,17 @@
+{
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "files.associations": {
+    "*.html": "twig"
+  },
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "path-intellisense.mappings": {
+    "@components": "${workspaceRoot}/src/components",
+    "@objects": "${workspaceRoot}/src/objects",
+    "@templates": "${workspaceRoot}/src/templates"
+  },
+  "editor.formatOnSave": true
+}
