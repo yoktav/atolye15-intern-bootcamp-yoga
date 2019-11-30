@@ -5,8 +5,8 @@
   letter-spacing: px-to-rem(10px);
 
   &:hover {
-    text-decoration: none;
     color: color-palette('primary', 500);
+    text-decoration: none;
   }
 
   &--white {
