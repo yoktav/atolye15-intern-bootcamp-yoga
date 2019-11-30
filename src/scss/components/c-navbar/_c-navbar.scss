@@ -1,0 +1,21 @@
+.c-navbar {
+  &__item {
+    display: inline-flex;
+    padding: px-to-rem(40px);
+    color: $color-white;
+    transition: color $g-transition-duration ease-in-out;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    &:hover {
+      color: color-palette('primary', 500);
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<nav class="c-navbar {{ modifier_class }}">
+	{% for variable in navItems %}
+		<a href="{{ variable.href }}" class="c-navbar__item">{{ variable.content }}</a>
+	{% endfor %}
+</nav>
