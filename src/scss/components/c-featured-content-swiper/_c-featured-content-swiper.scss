@@ -1,0 +1,13 @@
+.c-featured-content-swiper {
+  position: relative;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__header {
+    font-size: px-to-rem(18px);
+    font-weight: 400;
+    line-height: 1.33;
+  }
+}

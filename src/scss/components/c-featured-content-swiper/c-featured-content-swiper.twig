@@ -1,0 +1,34 @@
+<div class="c-featured-content-swiper {{ modifier_class }}">
+  <div class="c-featured-content-swiper__container swiper-container">
+
+    <div class="c-featured-content-swiper__top">
+      <h2 class="c-featured-content-swiper__header c-section-line">Featured Content</h2>
+
+      {% include "../c-swiper-arrows/c-swiper-arrows.twig" with {
+        modifier_class: 'c-featured-content-swiper__arrow-wrapper',
+      } only %}
+
+    </div>
+    <div class="swiper-wrapper">
+      {% for variable in slides %}
+      <div class="swiper-slide">
+        <div class="c-featured-content-swiper__slide">
+          {% include "../c-featured-content-card/c-featured-content-card.twig" with {
+            modifier_class: variable.slide_modifier_class,
+            img_src: variable.slide_img_src,
+            img_src2x: variable.slide_img_src2x,
+            img_alt: variable.slide_img_alt,
+            date: variable.slide_date,
+            location: variable.slide_location,
+            header: variable.slide_header,
+            description: variable.slide_description,
+            href: variable.slide_href,
+          } only %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="swiper-pagination u-display-none"></div>
+  </div>
+</div>
