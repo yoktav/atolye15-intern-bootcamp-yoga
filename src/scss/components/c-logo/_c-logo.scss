@@ -1,0 +1,22 @@
+.c-logo {
+  color: color-palette('primary', 500);
+  font-size: px-to-rem(24px);
+  font-weight: 900;
+  letter-spacing: px-to-rem(10px);
+
+  &:hover {
+    text-decoration: none;
+    color: color-palette('primary', 500);
+  }
+
+  &--white {
+    color: $color-white;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+  &--small {
+    font-size: px-to-rem(16px);
+  }
+}
