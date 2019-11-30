@@ -8,16 +8,16 @@ $buttono-border-width: px-to-rem(1px);
 
 .c-button {
   @include buttono-block($display: inline-flex);
-  height: px-to-rem(48px);
+  min-height: px-to-rem(48px);
   align-items: center;
 
   &--small {
-    height: px-to-rem(44px);
+    min-height: px-to-rem(44px);
     font-size: px-to-rem($g-font-size-base-px - 4px);
   }
 
   &--large {
-    height: px-to-rem(56px);
+    min-height: px-to-rem(56px);
     font-size: px-to-rem($g-font-size-base-px);
   }
 
