@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 //Paths of CSS Files to concat them
 var cssSRC = [
-  //'./src/css/swiper.css',
+  './src/css/swiper.css',
   //'./src/css/ms-dropdown.css',
   //'./src/css/validetta.css',
   './temp/css/main.css',
@@ -29,7 +29,7 @@ var localhostDir = 'http://localhost/My/MyWorks/atolye15/dist/index.html';
 //Paths of JS Files to concat them
 var jsSRC = [
   //'./src/js/select.js',
-  //'./src/js/swiper.min.js',
+  './src/js/swiper.min.js',
   './src/js/jquery-3.4.1.min.js',
   //'./src/js/ms-dropdown.min.js',
   //'./src/js/validetta.js',
