@@ -1,0 +1,27 @@
+<header class="o-header">
+  <div class="container">
+    <div class="o-header__content">
+      {% include "../../components/c-logo/c-logo.twig" with {
+        modifier_class: 'o-header__logo c-logo--white',
+        href: '#',
+      } only %}
+      {% include "../../components/c-navbar/c-navbar.twig" with {
+        modifier_class: 'o-header__menu',
+        navItems: {
+          item1: {
+            href: '#',
+            content: 'Schedule',
+          },
+          item2: {
+            href: '#',
+            content: 'New to Yoga',
+          },
+          item3: {
+            href: '#',
+            content: 'Trainings',
+          },
+        },
+      } only %}
+    </div>
+  </div>
+</header>
