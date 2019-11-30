@@ -42,16 +42,16 @@
     d="M26.667 10.057c-0.606 0.886-1.333 1.636-2.168 2.249l-0.026 0.018q0.013 0.189 0.013 0.568c-0.003 1.252-0.19 2.458-0.536 3.596l0.023-0.088c-0.386 1.28-0.919 2.397-1.593 3.411l0.029-0.047c-0.714 1.090-1.539 2.027-2.48 2.835l-0.018 0.015c-0.99 0.832-2.15 1.503-3.414 1.952l-0.078 0.024c-1.274 0.467-2.745 0.738-4.279 0.738-0.033 0-0.065-0-0.098-0l0.005 0c-0.028 0-0.062 0-0.095 0-2.461 0-4.752-0.732-6.665-1.991l0.046 0.028c0.303 0.035 0.655 0.055 1.011 0.055 0.016 0 0.032-0 0.047-0h-0.002c0.027 0 0.059 0 0.091 0 2.026 0 3.887-0.704 5.353-1.88l-0.017 0.013c-1.904-0.038-3.507-1.286-4.075-3.004l-0.009-0.031c0.247 0.041 0.532 0.066 0.823 0.068h0.002c0.409-0 0.806-0.055 1.182-0.157l-0.032 0.007c-1.018-0.203-1.886-0.743-2.503-1.495l-0.006-0.008c-0.622-0.731-1-1.686-1-2.73 0-0.021 0-0.041 0-0.062l-0 0.003v-0.053c0.569 0.326 1.246 0.528 1.968 0.554l0.008 0c-0.593-0.399-1.073-0.922-1.41-1.535l-0.011-0.023c-0.336-0.596-0.533-1.308-0.533-2.066 0-0.006 0-0.013 0-0.019v0.001c-0-0.005-0-0.011-0-0.017 0-0.808 0.224-1.563 0.612-2.208l-0.011 0.019c1.084 1.327 2.41 2.411 3.918 3.194l0.069 0.033c1.46 0.77 3.178 1.258 5 1.346l0.028 0.001c-0.066-0.3-0.104-0.646-0.104-1 0-0.001 0-0.001 0-0.002v0c-0-0.022-0.001-0.048-0.001-0.073 0-1.184 0.488-2.254 1.274-3.019l0.001-0.001c0.793-0.791 1.887-1.279 3.095-1.279 1.258 0 2.392 0.53 3.191 1.379l0.002 0.002c1.046-0.204 1.976-0.571 2.813-1.076l-0.038 0.022c-0.329 1.033-1.011 1.874-1.903 2.399l-0.020 0.011c0.933-0.108 1.785-0.347 2.574-0.699l-0.055 0.022z">
   </path>
 </symbol>
-<symbol id="c-icon--chevron-right" viewBox="0 0 19 28">
+<symbol id="c-icon--chevron-right" viewBox="0 0 24 24">
   <title>chevron-right</title>
   <path
-    d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z">
+    d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z">
   </path>
 </symbol>
-<symbol id="c-icon--chevron-left" viewBox="0 0 21 28">
+<symbol id="c-icon--chevron-left" viewBox="0 0 24 24">
   <title>chevron-left</title>
   <path
-    d="M18.297 4.703l-8.297 8.297 8.297 8.297c0.391 0.391 0.391 1.016 0 1.406l-2.594 2.594c-0.391 0.391-1.016 0.391-1.406 0l-11.594-11.594c-0.391-0.391-0.391-1.016 0-1.406l11.594-11.594c0.391-0.391 1.016-0.391 1.406 0l2.594 2.594c0.391 0.391 0.391 1.016 0 1.406z">
+    d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z">
   </path>
 </symbol>
 {% endblock %}
@@ -109,15 +109,78 @@
   } only %}
 </div>
 
+<section class="container">
+  {% include "../../scss/components/c-featured-content-swiper/c-featured-content-swiper.twig" with {
+  modifier_class: '',
+  slides: {
+    slide1: {
+      slide_modifier_class: '',
+      slide_img_src: './assets/img/fc1.png',
+      slide_img_src2x: './assets/img/fc1@2x.png',
+      slide_img_alt: 'Torquem detraxit hosti et quidem rerum',
+      slide_date: '12 Ağustos - 15 Ağustos 2019',
+      slide_location: 'Konak, İzmir',
+      slide_header: 'Torquem detraxit hosti et quidem rerum',
+      slide_description: 'At magnum periculum adiit in quo quaerimus, non numquam eius.',
+      slide_href: '#',
+    },
+    slide2: {
+      slide_modifier_class: '',
+      slide_img_src: './assets/img/fc2.png',
+      slide_img_src2x: './assets/img/fc2@2x.png',
+      slide_img_alt: 'Laudem et via procedat',
+      slide_date: '12 Ağustos - 15 Ağustos 2019',
+      slide_location: 'Konak, İzmir',
+      slide_header: 'Laudem et via procedat',
+      slide_description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+      slide_href: '#',
+    },
+    slide3: {
+      slide_modifier_class: '',
+      slide_img_src: './assets/img/fc3.png',
+      slide_img_src2x: './assets/img/fc3@2x.png',
+      slide_img_alt: 'At vero eos censes aut voluptates',
+      slide_date: '12 Ağustos - 15 Ağustos 2019',
+      slide_location: 'Konak, İzmir',
+      slide_header: 'At vero eos censes aut voluptates',
+      slide_description: 'Tum dicere exorsus!',
+      slide_href: '#',
+    },
+    slide4: {
+      slide_modifier_class: '',
+      slide_img_src: './assets/img/fc2.png',
+      slide_img_src2x: './assets/img/fc2@2x.png',
+      slide_img_alt: 'Laudem et via procedat',
+      slide_date: '12 Ağustos - 15 Ağustos 2019',
+      slide_location: 'Konak, İzmir',
+      slide_header: 'Laudem et via procedat',
+      slide_description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+      slide_href: '#',
+    },
+    slide5: {
+      slide_modifier_class: '',
+      slide_img_src: './assets/img/fc3.png',
+      slide_img_src2x: './assets/img/fc3@2x.png',
+      slide_img_alt: 'At vero eos censes aut voluptates',
+      slide_date: '12 Ağustos - 15 Ağustos 2019',
+      slide_location: 'Konak, İzmir',
+      slide_header: 'At vero eos censes aut voluptates',
+      slide_description: 'Tum dicere exorsus!',
+      slide_href: '#',
+    },
+  },
+} only %}
+</section>
+
 {% endblock %}
 {% block js %}
 <script>
-  var swiper = new Swiper('.c-featured-content-swiper', {
-    slidesPerView: 4,
+  var swiper = new Swiper('.c-featured-content-swiper__container', {
+    slidesPerView: 3,
     grabCursor: true,
-    loop: true,
     lazy: true,
     loopFillGroupWithBlank: true,
+    spaceBetween: 30,
     pagination: {
       clickable: true,
     },
