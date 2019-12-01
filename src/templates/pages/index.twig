@@ -172,7 +172,41 @@
 } only %}
 </section>
 
+<section class="u-padding-ends-large u-background-color-gray-50">
+  <div class="container">
 
+    <div class="u-display-flex u-align-items-center u-justify-content-space-between">
+      {% include "../../scss/components/c-section-header/c-section-header.twig" with {
+        modifier_class: '',
+        sectionLineStatus: 'has_section_line',
+        header: 'Upcoming Events',
+      } only %}
+
+      {% include "../../scss/components/c-button/c-button.twig" with {
+        href: '#',
+        modifier_class: 'c-button--outline c-button--small',
+        content: 'Show Past Events',
+      } only %}
+
+    </div>
+
+    <div class="l-event-cards">
+      {% for 1 in 1..5 %}
+      {% include "../../scss/components/c-event-card/c-event-card.twig" with {
+          modifier_class: 'l-event-cards__card',
+          location: 'Alsancak, İzmir',
+          time: '09:30 - 14:30',
+          date: '12 Ağustos - 15 Ağustos 2019',
+          header: 'An event organized by the best Yoga expertises',
+          link_modifier_class: '',
+          link_href: '#',
+          link_content: 'Get a Ticket',
+      } only %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
 
 {% endblock %}
 {% block js %}
