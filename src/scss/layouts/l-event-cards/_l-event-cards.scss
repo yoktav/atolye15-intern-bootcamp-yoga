@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   @include media-breakpoint-down(lg) {
-    width: 2000px;
+    width: px-to-rem(2000px);
     flex-wrap: unset;
   }
   &__card {
