@@ -3,6 +3,7 @@
   font-size: px-to-rem(24px);
   font-weight: 900;
   letter-spacing: px-to-rem(10px);
+  white-space: nowrap;
 
   &:hover {
     color: color-palette('primary', 500);
