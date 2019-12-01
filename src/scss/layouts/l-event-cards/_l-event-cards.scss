@@ -1,6 +1,10 @@
 .l-event-cards {
   display: flex;
   flex-wrap: wrap;
+  @include media-breakpoint-down(lg) {
+    width: 2000px;
+    flex-wrap: unset;
+  }
   &__card {
     margin-right: px-to-rem(16px);
     margin-bottom: px-to-rem(16px);

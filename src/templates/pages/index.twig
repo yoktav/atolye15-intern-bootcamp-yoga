@@ -194,25 +194,24 @@
 {# Upcoming Events #}
 <section class="u-padding-ends-large u-background-color-gray-50">
   <div class="container">
-
     <div class="u-display-flex u-align-items-center u-justify-content-space-between">
       {% include "../../scss/components/c-section-header/c-section-header.twig" with {
         modifier_class: '',
         sectionLineStatus: 'has_section_line',
         header: 'Upcoming Events',
       } only %}
-
       {% include "../../scss/components/c-button/c-button.twig" with {
         href: '#',
         modifier_class: 'c-button--outline c-button--small',
         content: 'Show Past Events',
       } only %}
-
     </div>
-
-    <div class="l-event-cards">
-      {% for 1 in 1..5 %}
-      {% include "../../scss/components/c-event-card/c-event-card.twig" with {
+  </div>
+  <div class=" u-overflow-auto@lg-down">
+    <div class="container">
+      <div class="l-event-cards">
+        {% for 1 in 1..5 %}
+        {% include "../../scss/components/c-event-card/c-event-card.twig" with {
           modifier_class: 'l-event-cards__card',
           location: 'Alsancak, İzmir',
           time: '09:30 - 14:30',
@@ -221,10 +220,10 @@
           link_modifier_class: 'c-link--primary',
           link_href: '#',
           link_content: 'Get a Ticket',
-      } only %}
-      {% endfor %}
+        } only %}
+        {% endfor %}
+      </div>
     </div>
-
   </div>
 </section>
 
@@ -388,6 +387,7 @@
   </div>
 </section>
 
+{# Footer #}
 <footer>
   <div class="container u-padding-ends-medium">
     <div class="row">
