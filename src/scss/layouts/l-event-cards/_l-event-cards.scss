@@ -1,0 +1,8 @@
+.l-event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  &__card {
+    margin-right: px-to-rem(16px);
+    margin-bottom: px-to-rem(16px);
+  }
+}
