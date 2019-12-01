@@ -1,0 +1,14 @@
+<div class="c-blog-post-card {{ modifier_class }}">
+  <img class="c-blog-post-card__image" src="{{ img_src }}" alt="{{ img_alt }}" srcset="{{ img_src2x }} 2x" width="353">
+  <div class="c-blog-post-card__meta-info">
+    <img class="c-blog-post-card__user-picture" src="{{ user_img_src }}" alt="{{ user_img_alt }}" srcset="{{ user_img_src2x }} 2x" width="24">
+    <div class="c-blog-post-card__user-name">{{ user_name }}</div>
+  </div>
+  <h5 class="c-blog-post-card__header">{{ header }}</h5>
+  <p class="c-blog-post-card__description">{{ description }}</p>
+  {% include "../c-link/c-link.twig" with {
+    modifier_class: 'c-link--secondary c-blog-post-card__link',
+    content: 'Read More',
+    href: '#',
+  } only %}
+</div>
