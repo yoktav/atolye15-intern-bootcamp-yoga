@@ -1,0 +1,27 @@
+<div class="c-swiper {{ modifier_class }}">
+  <div class="c-swiper__container swiper-container {{ swiper_name }}">
+
+    <div class="u-display-flex u-align-items-center u-justify-content-space-between">
+      {% include "../c-section-header/c-section-header.twig" with {
+        modifier_class: section_header_modifier_class,
+        sectionLineStatus: section_sectionLineStatus,
+        header: section_header,
+      } only %}
+
+      {% include "../c-swiper-arrows/c-swiper-arrows.twig" with {
+        modifier_class: 'c-swiper__arrow-wrapper',
+      } only %}
+
+    </div>
+    <div class="swiper-wrapper">
+    {% block swiperSlide %}{% endblock %}
+    </div>
+
+    {% if swiperPaginationStatus=='has_pagination' %}
+    <div class="swiper-pagination"></div>
+    {% else %}
+    <div class="swiper-pagination u-display-none"></div>
+    {% endif %}
+
+  </div>
+</div>
