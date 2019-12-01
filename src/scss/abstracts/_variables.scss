@@ -151,10 +151,17 @@ $grid-columns: 12 !default;
 $grid-gutter-width: px-to-rem(32px) !default;
 
 // Borders
-//
-//
+// -------------------------
 
 $g-border-radius: px-to-rem(4px);
+
+// Box Shadows
+// -------------------------
+
+$g-box-shadow-level-1: 0 px-to-rem(10px) px-to-rem(20px) 0 rgba(color-palette('gray', 400), 0.1);
+$g-box-shadow-level-2: 0 px-to-rem(20px) px-to-rem(20px) 0 rgba(color-palette('gray', 400), 0.2);
+$g-box-shadow-level-3: 0 px-to-rem(30px) px-to-rem(30px) 0 rgba(color-palette('gray', 400), 0.3);
+$g-box-shadow-level-4: 0 px-to-rem(40px) px-to-rem(40px) 0 rgba(color-palette('gray', 400), 0.4);
 
 //
 // Z-index
