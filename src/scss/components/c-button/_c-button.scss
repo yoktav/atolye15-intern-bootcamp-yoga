@@ -5,6 +5,7 @@ $buttono-border-radius: $g-border-radius;
 $buttono-font-size: px-to-rem($g-font-size-base-px - 4px);
 $buttono-padding: px-to-rem(8px) px-to-rem(32.5px);
 $buttono-border-width: px-to-rem(1px);
+$buttono-background-color: transparent;
 
 .c-button {
   @include buttono-block($display: inline-flex);
@@ -37,7 +38,6 @@ $buttono-border-width: px-to-rem(1px);
 
   &--outline {
     @include buttono-style-modifier(
-      $background-color: $color-white,
       $background-color-hover: color-palette('primary', 50),
       $color: $primary-color,
       $color-hover: color-palette('primary', 500),
