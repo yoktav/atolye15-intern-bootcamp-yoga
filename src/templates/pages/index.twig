@@ -57,8 +57,10 @@
 {% endblock %}
 {% block main %}
 
+{# Header #}
 {% include "../../scss/objects/o-header/o-header.twig" %}
 
+{# Jumbotron #}
 {% include  "../../scss/components/c-jumbotron/c-jumbotron.twig" with {
     bg_image_url: './assets/img/jumbotron@2x.png',
     header: 'It’s the perfect time for YOGA',
@@ -67,6 +69,7 @@
     button_content: 'Join Now',
   } only %}
 
+{# Course Cards placed in bottom of jumbotron #}
 <div class="container l-course-cards">
   {% include "../../scss/components/c-course-card/c-course-card.twig" with {
     modifier_class: 'l-course-cards__card',
@@ -109,69 +112,86 @@
   } only %}
 </div>
 
+{# Featured Content #}
 <section class="container u-padding-top-xlarge@md-up u-padding-bottom-xlarge">
-  {% include "../../scss/components/c-featured-content-swiper/c-featured-content-swiper.twig" with {
+{% embed "../../scss/components/c-swiper/c-swiper.twig" with {
   modifier_class: '',
-  slides: {
-    slide1: {
-      slide_modifier_class: '',
-      slide_img_src: './assets/img/fc1.png',
-      slide_img_src2x: './assets/img/fc1@2x.png',
-      slide_img_alt: 'Torquem detraxit hosti et quidem rerum',
-      slide_date: '12 Ağustos - 15 Ağustos 2019',
-      slide_location: 'Konak, İzmir',
-      slide_header: 'Torquem detraxit hosti et quidem rerum',
-      slide_description: 'At magnum periculum adiit in quo quaerimus, non numquam eius.',
-      slide_href: '#',
-    },
-    slide2: {
-      slide_modifier_class: '',
-      slide_img_src: './assets/img/fc2.png',
-      slide_img_src2x: './assets/img/fc2@2x.png',
-      slide_img_alt: 'Laudem et via procedat',
-      slide_date: '12 Ağustos - 15 Ağustos 2019',
-      slide_location: 'Konak, İzmir',
-      slide_header: 'Laudem et via procedat',
-      slide_description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-      slide_href: '#',
-    },
-    slide3: {
-      slide_modifier_class: '',
-      slide_img_src: './assets/img/fc3.png',
-      slide_img_src2x: './assets/img/fc3@2x.png',
-      slide_img_alt: 'At vero eos censes aut voluptates',
-      slide_date: '12 Ağustos - 15 Ağustos 2019',
-      slide_location: 'Konak, İzmir',
-      slide_header: 'At vero eos censes aut voluptates',
-      slide_description: 'Tum dicere exorsus!',
-      slide_href: '#',
-    },
-    slide4: {
-      slide_modifier_class: '',
-      slide_img_src: './assets/img/fc2.png',
-      slide_img_src2x: './assets/img/fc2@2x.png',
-      slide_img_alt: 'Laudem et via procedat',
-      slide_date: '12 Ağustos - 15 Ağustos 2019',
-      slide_location: 'Konak, İzmir',
-      slide_header: 'Laudem et via procedat',
-      slide_description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-      slide_href: '#',
-    },
-    slide5: {
-      slide_modifier_class: '',
-      slide_img_src: './assets/img/fc3.png',
-      slide_img_src2x: './assets/img/fc3@2x.png',
-      slide_img_alt: 'At vero eos censes aut voluptates',
-      slide_date: '12 Ağustos - 15 Ağustos 2019',
-      slide_location: 'Konak, İzmir',
-      slide_header: 'At vero eos censes aut voluptates',
-      slide_description: 'Tum dicere exorsus!',
-      slide_href: '#',
-    },
-  },
+  swiper_name: 'js-featured-content-swiper',
+  section_header_modifier_class: '',
+  section_sectionLineStatus: 'has_section_line',
+  section_header: 'Featured Content',
 } only %}
+{% block swiperSlide %}
+  <div class="swiper-slide">
+    {% include "../../scss/components/c-featured-content-card/c-featured-content-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/fc1.png',
+      img_src2x: './assets/img/fc1@2x.png',
+      img_alt: 'Torquem detraxit hosti et quidem rerum',
+      date: '12 Ağustos - 15 Ağustos 2019',
+      location: 'Konak, İzmir',
+      header: 'Torquem detraxit hosti et quidem rerum',
+      description: 'At magnum periculum adiit in quo quaerimus, non numquam eius.',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide">
+    {% include "../../scss/components/c-featured-content-card/c-featured-content-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/fc2.png',
+      img_src2x: './assets/img/fc2@2x.png',
+      img_alt: 'Laudem et via procedat',
+      date: '12 Ağustos - 15 Ağustos 2019',
+      location: 'Konak, İzmir',
+      header: 'Laudem et via procedat',
+      description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide">
+    {% include "../../scss/components/c-featured-content-card/c-featured-content-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/fc3.png',
+      img_src2x: './assets/img/fc3@2x.png',
+      img_alt: 'At vero eos censes aut voluptates',
+      date: '12 Ağustos - 15 Ağustos 2019',
+      location: 'Konak, İzmir',
+      header: 'At vero eos censes aut voluptates',
+      description: 'Tum dicere exorsus!',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide">
+    {% include "../../scss/components/c-featured-content-card/c-featured-content-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/fc2.png',
+      img_src2x: './assets/img/fc2@2x.png',
+      img_alt: 'Laudem et via procedat',
+      date: '12 Ağustos - 15 Ağustos 2019',
+      location: 'Konak, İzmir',
+      header: 'Laudem et via procedat',
+      description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide">
+    {% include "../../scss/components/c-featured-content-card/c-featured-content-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/fc3.png',
+      img_src2x: './assets/img/fc3@2x.png',
+      img_alt: 'At vero eos censes aut voluptates',
+      date: '12 Ağustos - 15 Ağustos 2019',
+      location: 'Konak, İzmir',
+      header: 'At vero eos censes aut voluptates',
+      description: 'Tum dicere exorsus!',
+      href: '#',
+    } only %}
+  </div>
+{% endblock %}
+{% endembed %}
 </section>
 
+{# Upcoming Events #}
 <section class="u-padding-ends-large u-background-color-gray-50">
   <div class="container">
 
@@ -211,7 +231,7 @@
 {% endblock %}
 {% block js %}
 <script>
-  var swiper = new Swiper('.c-featured-content-swiper__container', {
+  var swiper = new Swiper('.js-featured-content-swiper', {
     slidesPerView: 3,
     grabCursor: true,
     lazy: true,
