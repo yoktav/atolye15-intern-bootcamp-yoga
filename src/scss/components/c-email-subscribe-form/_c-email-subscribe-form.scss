@@ -7,12 +7,12 @@
   &__input {
     height: $form-height;
     flex: 1;
-    font-weight: 400;
-    font-size: px-to-rem(14px);
     padding: px-to-rem(13px) px-to-rem(24px);
-    background-color: color-palette('primary', 50);
     border: 0;
+    background-color: color-palette('primary', 50);
     color: color-palette('gray', 700);
+    font-size: px-to-rem(14px);
+    font-weight: 400;
 
     @include media-breakpoint-down(sm) {
       width: px-to-rem(45px);
@@ -23,13 +23,13 @@
   }
   &__submit {
     min-height: $form-height;
+    padding: px-to-rem(8px) px-to-rem(20px);
     border: 0;
     background-color: color-palette('primary', 500);
     border-radius: ($g-border-radius / 2);
     color: $color-white;
-    font-weight: 600;
-    font-size: px-to-rem(14px);
-    padding: px-to-rem(8px) px-to-rem(20px);
     cursor: pointer;
+    font-size: px-to-rem(14px);
+    font-weight: 600;
   }
 }

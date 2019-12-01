@@ -18,13 +18,13 @@
     flex-grow: 4;
     align-items: center;
     @include media-breakpoint-down(lg) {
-      margin-bottom: px-to-rem(30px);
       display: block;
+      margin-bottom: px-to-rem(30px);
     }
     &--centered {
       flex-grow: 2;
-      font-size: px-to-rem(14px);
       justify-content: space-evenly;
+      font-size: px-to-rem(14px);
       @include media-breakpoint-down(lg) {
         justify-content: flex-start;
         .c-link {
@@ -47,8 +47,8 @@
     margin-left: px-to-rem(24px);
     font-size: px-to-rem(24px);
     @include media-breakpoint-down(lg) {
-      margin-left: unset;
       margin-right: px-to-rem(24px);
+      margin-left: unset;
     }
   }
 }
