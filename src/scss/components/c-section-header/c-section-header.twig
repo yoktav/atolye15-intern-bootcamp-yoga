@@ -1,0 +1,5 @@
+{% if sectionLineStatus=='has_section_line' %}
+  <h2 class="c-section-header c-section-line {{ modifier_class }}">{{ header }}</h2>
+{% else %}
+  <h2 class="c-section-header {{ modifier_class }}">{{ header }}</h2>
+{% endif %}
