@@ -1,0 +1,11 @@
+.c-link {
+  display: inline-flex;
+  align-items: center;
+  color: $primary-color;
+  transition: all $g-transition-duration ease-in-out;
+  &--no-hover-underline {
+    &:hover {
+      text-decoration: unset;
+    }
+  }
+}

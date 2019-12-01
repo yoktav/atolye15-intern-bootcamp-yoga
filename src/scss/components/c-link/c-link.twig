@@ -1,0 +1,9 @@
+<a class="c-link {{ modifier_class }}" href="{{ href }}">
+  {{ content }}
+  {% if iconStatus=='has_icon' %}
+  <svg class="c-icon c-icon--{{ icon_name }}">
+    <use xlink:href="#c-icon--{{ icon_name }}"></use>
+  </svg>
+  {% else %}
+  {% endif %}
+</a>
