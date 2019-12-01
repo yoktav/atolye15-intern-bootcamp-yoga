@@ -1,1 +1,5 @@
-<a href="{{ href }}" class="c-logo {{ modifier_class }}">YOGA.</a>
+{% if linkStatus=='has_link' %}
+  <a href="{{ href }}" class="c-logo {{ modifier_class }}">YOGA.</a>
+{% else %}
+  <div class="c-logo {{ modifier_class }}">YOGA.</div>
+{% endif %}
