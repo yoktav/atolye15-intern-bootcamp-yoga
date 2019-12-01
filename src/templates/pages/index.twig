@@ -388,11 +388,126 @@
   </div>
 </section>
 
-<footer class="container">
-  <div class="row">
-    <div class="col col--sm-6 col--lg-3">
-      asdad
+<footer>
+  <div class="container u-padding-ends-medium">
+    <div class="row">
+      <div class="col col--sm-6 col--lg">
+        {% include "../../scss/components/c-footer-list/c-footer-list.twig" with {
+          modifier_class: '',
+          header: 'Y O G A .',
+          listItems: {
+            item1: {
+              href: '#',
+              content: 'Ailemiz',
+            },
+            item2: {
+              href: '#',
+              content: 'Yogamız',
+            },
+            item3: {
+              href: '#',
+              content: 'Kalbimiz',
+            },
+            item4: {
+              href: '#',
+              content: 'Stüdyolarımız',
+            },
+            item5: {
+              href: '#',
+              content: 'Lemongrass',
+            },
+            item6: {
+              href: '#',
+              content: 'Dükkan',
+            },
+            item7: {
+              href: '#',
+              content: 'Projelerimiz',
+            },
+          },
+        } only %}
+      </div>
+      <div class="col col--sm-6 col--lg">
+        {% include "../../scss/components/c-footer-list/c-footer-list.twig" with {
+          modifier_class: '',
+          header: 'Sunduklarımız',
+          listItems: {
+            item1: {
+              href: '#',
+              content: 'Günlük Program',
+            },
+            item2: {
+              href: '#',
+              content: 'Özel Pratikler',
+            },
+            item3: {
+              href: '#',
+              content: 'Şirket Etkinlikleri',
+            },
+            item4: {
+              href: '#',
+              content: 'İstinye',
+            },
+          },
+        } only %}
+      </div>
+      <div class="col col--sm-6 col--lg">
+        {% include "../../scss/components/c-footer-list/c-footer-list.twig" with {
+          modifier_class: '',
+          header: 'Ücretlerimiz',
+          listItems: {
+            item1: {
+              href: '#',
+              content: 'Uzmanlaşma',
+            },
+            item2: {
+              href: '#',
+              content: '200 Saat',
+            },
+            item3: {
+              href: '#',
+              content: '300 Saat',
+            },
+            item4: {
+              href: '#',
+              content: 'Yin Yoga',
+            },
+            item5: {
+              href: '#',
+              content: 'Yoga Terapi',
+            },
+          },
+        } only %}
+      </div>
+      <div class="col col--sm-6 col--lg">
+        {% include "../../scss/components/c-footer-list/c-footer-list.twig" with {
+          modifier_class: '',
+          header: 'Linkler',
+          listItems: {
+            item1: {
+              href: '#',
+              content: 'İletişim',
+            },
+            item2: {
+              href: '#',
+              content: 'Blog',
+            },
+            item3: {
+              href: '#',
+              content: 'Videolar',
+            },
+          },
+        } only %}
+      </div>
+      <div class="col col--sm-8 col--lg-4">
+        <div class="u-margin-top-medium u-margin-bottom-small">Kampanyalardan haberdar olun</div>
+        {% include "../../scss/components/c-email-subscribe-form/c-email-subscribe-form.twig" %}
+      </div>
     </div>
+  </div>
+  <hr class="u-margin-top-0">
+  <div class="container">
+  {% include "../../scss/components/c-footer-bottom/c-footer-bottom.twig" %}
   </div>
 </footer>
 
