@@ -8,5 +8,11 @@
   &__card {
     margin-right: px-to-rem(16px);
     margin-bottom: px-to-rem(16px);
+    &:nth-of-type(3) {
+      margin-right: unset;
+      @include media-breakpoint-down(lg) {
+        margin-right: px-to-rem(16px);
+      }
+    }
   }
 }
