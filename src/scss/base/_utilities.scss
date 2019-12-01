@@ -31,6 +31,10 @@
   background-color: color-palette('gray', 50);
 }
 
+.u-color-gray-700 {
+  color: color-palette('gray', 700);
+}
+
 .u-clearfix {
   @include clearfix;
 }
