@@ -7,7 +7,6 @@ var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   changed = require('gulp-changed'),
   twig = require('gulp-twig'),
-  data = require('gulp-data'),
   postcss = require('gulp-postcss'),
   htmlmin = require('gulp-htmlmin'),
   fs = require('fs'),
@@ -181,11 +180,6 @@ function imgmin() {
 function twigHtml() {
   return gulp
     .src(paths.twig.src)
-    .pipe(
-      data(function(file) {
-        return JSON.parse(fs.readFileSync(paths.twig.data.src + 'head' + '.json'));
-      }),
-    )
     .pipe(twig())
     .on('error', function(err) {
       process.stderr.write(err.message + '\n');
