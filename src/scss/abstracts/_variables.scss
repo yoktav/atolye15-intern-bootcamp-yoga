@@ -129,7 +129,7 @@ $grid-breakpoints: (
   sm: px-to-rem(544px),
   md: px-to-rem(768px),
   lg: px-to-rem(992px),
-  xl: px-to-rem(1260px),
+  xl: px-to-rem(1200px),
 ) !default;
 
 // Grid containers
@@ -140,7 +140,7 @@ $container-max-widths: (
   sm: px-to-rem(576px),
   md: px-to-rem(720px),
   lg: px-to-rem(940px),
-  xl: px-to-rem(1200px),
+  xl: px-to-rem(1140px),
 ) !default;
 
 // Grid columns
