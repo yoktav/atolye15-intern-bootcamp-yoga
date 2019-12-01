@@ -1,0 +1,8 @@
+<div class="c-footer-list {{ modifier_class }}">
+  <h6 class="c-footer-list__header">{{ header }}</h6>
+  <ul class="c-footer-list__list">
+  {% for item in listItems %}
+    <li><a href="{{ item.href }}" class="c-footer-list__link c-link c-link--secondary">{{ item.content }}</a></li>
+  {% endfor %}
+  </ul>
+</div>

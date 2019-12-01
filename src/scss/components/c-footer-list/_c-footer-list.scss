@@ -1,0 +1,14 @@
+.c-footer-list {
+  &__header {
+    margin-bottom: px-to-rem(24px);
+    color: $primary-color;
+  }
+  &__list {
+    @include list-unstyled(0, 0);
+  }
+  &__link {
+    display: inline-block;
+    padding-bottom: px-to-rem(16px);
+    line-height: 1.57;
+  }
+}
