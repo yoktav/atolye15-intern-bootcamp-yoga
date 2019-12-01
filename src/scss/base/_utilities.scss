@@ -398,7 +398,11 @@ $g-utilities: (
   ),
   'overflow': (
     property: overflow,
-    values: hidden,
+    values: hidden
+      (
+        value: auto,
+        responsive: true,
+      ),
   ),
   'table-layout': (
     property: table-layout,
