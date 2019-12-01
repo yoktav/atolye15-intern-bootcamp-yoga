@@ -29,16 +29,14 @@
     line-height: 1.5;
   }
   &__link {
-    display: inline-flex;
-    align-items: center;
     margin-left: px-to-rem(8px);
-    & .c-icon--right-arrow {
+    .c-icon--right-arrow {
+      margin-left: px-to-rem(7px);
       color: $color-black;
       transition: transform $g-transition-duration ease-in-out;
-      margin-left: px-to-rem(7px);
     }
     &:hover .c-icon--right-arrow {
-      transform: translateX(2px);
+      transform: translateX(px-to-rem(3px));
     }
   }
 }

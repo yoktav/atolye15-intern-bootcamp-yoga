@@ -6,5 +6,10 @@
   </div>
   <h5 class="c-featured-content-card__header">{{ header }}</h5>
   <p class="c-featured-content-card__description">{{ description }}</p>
-  <a class="c-featured-content-card__link" href="{{ href }}">Learn More <svg class="c-icon c-icon--right-arrow"><use xlink:href="#c-icon--right-arrow"></use></svg></a>
+  {% include "../c-link/c-link.twig" with {
+    iconStatus: 'has_icon',
+    icon_name: 'right-arrow',
+    modifier_class: 'c-link--no-hover-underline c-featured-content-card__link',
+    content: 'Learn More',
+  } only %}
 </div>
