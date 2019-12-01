@@ -218,7 +218,7 @@
           time: '09:30 - 14:30',
           date: '12 Ağustos - 15 Ağustos 2019',
           header: 'An event organized by the best Yoga expertises',
-          link_modifier_class: '',
+          link_modifier_class: 'c-link--primary',
           link_href: '#',
           link_content: 'Get a Ticket',
       } only %}
@@ -226,6 +226,110 @@
     </div>
 
   </div>
+</section>
+
+{# Latest Blog Posts #}
+<section class="container u-padding-top-xlarge u-padding-bottom-xlarge">
+{% embed "../../scss/components/c-swiper/c-swiper.twig" with {
+  modifier_class: '',
+  swiper_name: 'js-latest-blog-posts',
+  section_header_modifier_class: '',
+  section_sectionLineStatus: 'has_section_line',
+  section_header: 'Latest Blog Posts',
+} only %}
+{% block swiperSlide %}
+  <div class="swiper-slide u-margin-top-medium u-margin-bottom-medium">
+    {% include "../../scss/components/c-blog-post-card/c-blog-post-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/blog.png',
+      img_src2x: './assets/img/blog@2x.png',
+      img_alt: 'Quisque eu metus vel ex lacinia cursus.',
+      user_img_src: './assets/img/ali-kemal-akcay.png',
+      user_img_src2x: './assets/img/ali-kemal-akcay@2x.png',
+      user_img_alt: 'Ali Kemal Akçay',
+      user_name: 'Ali Kemal Akçay',
+      header: 'Quisque eu metus vel ex lacinia cursus.',
+      description: 'Probabo, inquit, modo dixi, constituto, ut aut in sanguinem suum.',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide u-margin-top-medium u-margin-bottom-medium">
+    {% include "../../scss/components/c-blog-post-card/c-blog-post-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/blog.png',
+      img_src2x: './assets/img/blog@2x.png',
+      img_alt: 'At magnum periculum adiit in quo aut in voluptate velit.',
+      user_img_src: './assets/img/sedef-yildiz.png',
+      user_img_src2x: './assets/img/sedef-yildiz@2x.png',
+      user_img_alt: 'Sedef Yıldız',
+      user_name: 'Sedef Yıldız',
+      header: 'At magnum periculum adiit in quo aut in voluptate velit.',
+      description: 'Tum dicere exorsus est et aut in sanguinem suum tam egregios viros censes tantas res gessisse sine causa? quae fuerit causamu..asd',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide u-margin-top-medium u-margin-bottom-medium">
+    {% include "../../scss/components/c-blog-post-card/c-blog-post-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/blog.png',
+      img_src2x: './assets/img/blog@2x.png',
+      img_alt: 'Quid ex ea commodi consequatur? quis autem',
+      user_img_src: './assets/img/hasan-aydogdu.png',
+      user_img_src2x: './assets/img/hasan-aydogdu@2x.png',
+      user_img_alt: 'Hasan Aydoğdu',
+      user_name: 'Hasan Aydoğdu',
+      header: 'Quid ex ea commodi consequatur? quis autem',
+      description: 'Filium morte multavit si sine dubio praeclara sunt, fecerint, virtutem iis per se esse fugiendum itaque earum motus et benivole!',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide u-margin-top-medium u-margin-bottom-medium">
+    {% include "../../scss/components/c-blog-post-card/c-blog-post-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/blog.png',
+      img_src2x: './assets/img/blog@2x.png',
+      img_alt: 'Sed ut alterum esse albam, dulce mel quorum facta',
+      user_img_src: './assets/img/bugra-kocak.png',
+      user_img_src2x: './assets/img/bugra-kocak@2x.png',
+      user_img_alt: 'Buğra Koçak',
+      user_name: 'Buğra Koçak',
+      header: 'Sed ut alterum esse albam, dulce mel quorum facta',
+      description: 'Si sine causa, nollem me tamen laudandis.',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide u-margin-top-medium u-margin-bottom-medium">
+    {% include "../../scss/components/c-blog-post-card/c-blog-post-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/blog.png',
+      img_src2x: './assets/img/blog@2x.png',
+      img_alt: 'At magnum periculum adiit in quo aut in voluptate velit.',
+      user_img_src: './assets/img/sedef-yildiz.png',
+      user_img_src2x: './assets/img/sedef-yildiz@2x.png',
+      user_img_alt: 'Sedef Yıldız',
+      user_name: 'Sedef Yıldız',
+      header: 'At magnum periculum adiit in quo aut in voluptate velit.',
+      description: 'Tum dicere exorsus est et aut in sanguinem suum tam egregios viros censes tantas res gessisse sine causa? quae fuerit causamu..asd',
+      href: '#',
+    } only %}
+  </div>
+  <div class="swiper-slide u-margin-top-medium u-margin-bottom-medium">
+    {% include "../../scss/components/c-blog-post-card/c-blog-post-card.twig" with {
+      modifier_class: '',
+      img_src: './assets/img/blog.png',
+      img_src2x: './assets/img/blog@2x.png',
+      img_alt: 'Quid ex ea commodi consequatur? quis autem',
+      user_img_src: './assets/img/hasan-aydogdu.png',
+      user_img_src2x: './assets/img/hasan-aydogdu@2x.png',
+      user_img_alt: 'Hasan Aydoğdu',
+      user_name: 'Hasan Aydoğdu',
+      header: 'Quid ex ea commodi consequatur? quis autem',
+      description: 'Filium morte multavit si sine dubio praeclara sunt, fecerint, virtutem iis per se esse fugiendum itaque earum motus et benivole!',
+      href: '#',
+    } only %}
+  </div>
+{% endblock %}
+{% endembed %}
 </section>
 
 {% endblock %}
@@ -245,16 +349,44 @@
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
       1050: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 50,
       },
       900: {
+        spaceBetween: 30,
+      },
+      700: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      }
+    }
+  });
+</script>
+<script>
+  var swiper = new Swiper('.js-latest-blog-posts', {
+    slidesPerView: 4,
+    grabCursor: true,
+    lazy: true,
+    loopFillGroupWithBlank: true,
+    spaceBetween: 17,
+    pagination: {
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1240: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1050: {
         slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      900: {
         spaceBetween: 30,
       },
       700: {
