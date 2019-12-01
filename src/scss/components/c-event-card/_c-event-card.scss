@@ -1,0 +1,33 @@
+.c-event-card {
+  width: px-to-rem(369px);
+  padding: px-to-rem(32px);
+  background-color: $color-white;
+  border-radius: ($g-border-radius * 2);
+  box-shadow: $g-box-shadow-level-1;
+  &__meta-info {
+    display: flex;
+    align-items: center;
+    color: color-palette('gray', 500);
+    font-size: px-to-rem(14px);
+    line-height: 1.57;
+  }
+  &__icon {
+    margin-right: px-to-rem(8px);
+    color: $primary-color;
+    font-size: px-to-rem(18px);
+  }
+  &__date {
+    margin-top: px-to-rem(16px);
+    color: color-palette('gray', 700);
+    font-size: px-to-rem(14px);
+    line-height: 1.57;
+  }
+  &__header {
+    min-height: px-to-rem(60px);
+    margin-top: px-to-rem(16px);
+    margin-bottom: px-to-rem(16px);
+    color: color-palette('gray', 700);
+    font-size: px-to-rem(18px);
+    line-height: 1.56;
+  }
+}

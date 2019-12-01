@@ -1,0 +1,25 @@
+<div class="c-event-card {{ modifier_class }}">
+  <div class="u-display-flex u-align-items-center u-justify-content-space-between">
+    <span class="c-event-card__meta-info">
+      <svg class="c-icon c-icon--icon-pin c-event-card__icon">
+        <use xlink:href="#c-icon--icon-pin"></use>
+      </svg>
+      {{ location }}
+    </span>
+    <span class="c-event-card__meta-info">
+      <svg class="c-icon c-icon--icon-clock c-event-card__icon">
+        <use xlink:href="#c-icon--icon-clock"></use>
+      </svg>
+      {{ time }}
+    </span>
+  </div>
+  <div class="c-event-card__date">{{ date }}</div>
+  <h3 class="c-event-card__header">{{ header }}</h3>
+  {% include "../c-link/c-link.twig" with {
+    modifier_class: link_modifier_class,
+    href: link_href,
+    content: link_content,
+    iconStatus: link_iconStatus,
+    icon_name: link_icon_name,
+  } only %}
+</div>
