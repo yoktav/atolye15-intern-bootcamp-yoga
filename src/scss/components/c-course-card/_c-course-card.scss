@@ -9,7 +9,7 @@
     width: px-to-rem(466px);
     height: auto;
     order: 0;
-    margin-right: px-to-rem(120px);
+    margin-right: px-to-rem(112px);
     border-radius: $g-border-radius;
     @include media-breakpoint-down(md) {
       width: px-to-rem(350px);
@@ -21,7 +21,7 @@
     &--right {
       order: 2;
       margin-right: unset;
-      margin-left: px-to-rem(120px);
+      margin-left: px-to-rem(112px);
       @include media-breakpoint-down(md) {
         order: 0;
         margin-left: unset;
