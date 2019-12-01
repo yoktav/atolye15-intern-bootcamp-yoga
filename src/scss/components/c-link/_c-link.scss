@@ -1,10 +1,23 @@
 .c-link {
   display: inline-flex;
   align-items: center;
-  color: $primary-color;
   transition: color $g-transition-duration ease-in-out;
 
   &:hover {
     text-decoration: unset;
+  }
+
+  &--primary {
+    color: $primary-color;
+    &:hover {
+      color: $g-link-hover-color;
+    }
+  }
+
+  &--secondary {
+    color: color-palette('gray', 700);
+    &:hover {
+      color: $g-link-hover-color;
+    }
   }
 }
