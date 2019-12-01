@@ -27,14 +27,6 @@
 // | `.u-cursor-pointer`        | Set the mouse cursor to a pointer and indicate a link. |
 //
 
-.u-background-color-gray-50 {
-  background-color: color-palette('gray', 50);
-}
-
-.u-color-gray-700 {
-  color: color-palette('gray', 700);
-}
-
 .u-clearfix {
   @include clearfix;
 }
@@ -427,6 +419,7 @@ $g-utilities: (
   'color': (
     property: color,
     values: (
+      'gray-700': color-palette('gray', 700),
       'muted': $g-text-muted-color,
       'primary': $primary-color,
       'success': $success-color,
@@ -437,6 +430,7 @@ $g-utilities: (
   'background-color': (
     property: background-color,
     values: (
+      'gray-50': color-palette('gray', 50),
       'primary': $primary-color,
       'success': $success-color,
       'alert': $alert-color,
@@ -459,7 +453,12 @@ $g-utilities: (
   ),
   'flex': (
     property: flex,
-    values: 1 none,
+    values: 1
+      (
+        value: 2,
+        responsive: true,
+      )
+      none,
   ),
   'flex-grow': (
     property: flex-grow,
@@ -479,7 +478,11 @@ $g-utilities: (
   ),
   'justify-content': (
     property: justify-content,
-    values: flex-start flex-end center space-between space-around,
+    values: flex-start flex-end center space-between space-around
+      (
+        value: space-evenly,
+        responsive: true,
+      ),
   ),
   'align-items': (
     property: align-items,
