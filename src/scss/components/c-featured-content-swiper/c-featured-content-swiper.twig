@@ -1,8 +1,12 @@
 <div class="c-featured-content-swiper {{ modifier_class }}">
   <div class="c-featured-content-swiper__container swiper-container">
 
-    <div class="c-featured-content-swiper__top">
-      <h2 class="c-featured-content-swiper__header c-section-line">Featured Content</h2>
+    <div class="u-display-flex u-align-items-center u-justify-content-space-between">
+      {% include "../c-section-header/c-section-header.twig" with {
+        modifier_class: '',
+        sectionLineStatus: 'has_section_line',
+        header: 'Featured Content',
+      } only %}
 
       {% include "../c-swiper-arrows/c-swiper-arrows.twig" with {
         modifier_class: 'c-featured-content-swiper__arrow-wrapper',
