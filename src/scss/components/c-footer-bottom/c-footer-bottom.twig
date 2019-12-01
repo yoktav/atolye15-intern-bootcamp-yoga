@@ -1,0 +1,47 @@
+<div class="c-footer-bottom">
+  {% include "../c-logo/c-logo.twig" with {
+    linkStatus: 'has_link',
+    href: '#',
+    modifier_class: 'c-footer-bottom__item',
+  } only %}
+
+  <div class="c-footer-bottom__item c-footer-bottom__item--centered">
+    {% include "../c-link/c-link.twig" with {
+      modifier_class: 'c-link--secondary',
+      href: '#',
+      content: 'Kullanım Koşulları',
+    } only %}
+    {% include "../c-link/c-link.twig" with {
+      modifier_class: 'c-link--secondary',
+      href: '#',
+      content: 'Kişisel Verilerin Korunması',
+    } only %}
+    {% include "../c-link/c-link.twig" with {
+      modifier_class: 'c-link--secondary',
+      href: '#',
+      content: 'Güvenlik ve Gizlilik',
+    } only %}
+  </div>
+
+  <div class="c-footer-bottom__item c-footer-bottom__item--right-aligned">
+    {% include "../c-link/c-link.twig" with {
+      modifier_class: 'c-link--secondary c-footer-bottom__icon',
+      href: '#',
+      iconStatus: 'has_icon',
+      icon_name: 'icon-facebook',
+    } only %}
+    {% include "../c-link/c-link.twig" with {
+      modifier_class: 'c-link--secondary c-footer-bottom__icon',
+      href: '#',
+      iconStatus: 'has_icon',
+      icon_name: 'icon-twitter',
+    } only %}
+    {% include "../c-link/c-link.twig" with {
+      modifier_class: 'c-link--secondary c-footer-bottom__icon',
+      href: '#',
+      iconStatus: 'has_icon',
+      icon_name: 'icon-instagram',
+    } only %}
+  </div>
+
+</div>
