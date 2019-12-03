@@ -1,3 +1,20 @@
+// Button
+//
+// Markup:
+// <a href="#" class="c-button {{modifier_class}}">Button Element</a>
+// <button class="c-button {{modifier_class}}">Button Element</button>
+// <input class="c-button {{modifier_class}}" type="button" value="Input Button" />
+//
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .c-button--small - A small button.
+// .c-button--large - A large button.
+// .c-button--primary - Primary button.
+// .c-button--outline - Outline button.
+// .c-button--ghost - Ghost button.
+//
+// Styleguide Components.Button
+
 @import '../../../../node_modules/buttono/buttono';
 
 $buttono-font-family: $g-font-family-base;

@@ -2,9 +2,11 @@
   "version": "1.0.0",
   "scripts": {
     "lint:css": "stylelint --syntax scss \"src/**/*.scss\"",
-    "format:css": "stylelint --fix --syntax scss \"src/**/*.scss\""
+    "format:css": "stylelint --fix --syntax scss \"src/**/*.scss\"",
+    "kss": "kss --config kss-config.json"
   },
   "devDependencies": {
+    "@atolye15/kss-node-twig-builder": "^1.2.0",
     "@atolye15/stylelint-config": "^1.2.0",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -20,6 +22,9 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-twig": "^1.2.0",
     "gulp-uglify": "^3.0.2",
+    "install": "^0.13.0",
+    "kss": "^3.0.0-beta.25",
+    "npm": "^6.13.1",
     "prettier": "^1.19.1",
     "stylelint": "^11.1.1",
     "stylelint-config-prettier": "^7.0.0",

@@ -1,0 +1,11 @@
+{
+  "title": "Title of the Style Guide",
+
+  "source": "./src/scss/",
+
+  "destination": "styleguide/",
+
+  "builder": "node_modules/@atolye15/kss-node-twig-builder",
+
+  "css": ["../dist/assets/css/style.min.css"]
+}
