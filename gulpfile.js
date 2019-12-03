@@ -67,7 +67,7 @@ var paths = {
     },
   },
   twig: {
-    src: './src/templates/pages/*.twig',
+    src: './src/twig/pages/*.twig',
     dest: './dist/',
     data: {
       src: './src/data/',
@@ -197,7 +197,7 @@ function twigHtml() {
 function watch() {
   gulp.watch('./src/scss/**/*.scss', gulp.series([css, concatCSS]));
   gulp.watch('./src/scss/**/*.twig', gulp.series([twigHtml]));
-  gulp.watch('./src/templates/**/*.twig', gulp.series([twigHtml]));
+  gulp.watch('./src/twig/**/*.twig', gulp.series([twigHtml]));
   browserSync.init({
     open: 'external',
     proxy: localhostDir,
