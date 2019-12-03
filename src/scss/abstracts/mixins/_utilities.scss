@@ -176,7 +176,7 @@
 
     .u-#{$property-class + $modifier } {
       @each $property in $properties {
-        // stylelint-disable-next-line declaration-no-important
+        //stylelint-disable-next-line declaration-no-important
         #{$property}: $value !important;
       }
 
