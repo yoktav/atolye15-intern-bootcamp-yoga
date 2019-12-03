@@ -1,9 +1,11 @@
-{% extends "../layout/layout.twig" %}
+{% extends "../layout/layout.html.twig" %}
 
 {% set title = 'It’s the perfect time for YOGA | Y O G A .' %}
 {% set description = 'YOGA for everyone' %}
 
-{% block head %}{% endblock %}
+{% block meta %}{% endblock %}
+{% block headerStylesheets %}{% endblock %}
+{% block headerJavascripts %}{% endblock %}
 {% block svg %}
 <symbol id="c-icon--right-arrow" viewBox="0 0 32 32">
   <title>right-arrow</title>
@@ -54,7 +56,7 @@
   </path>
 </symbol>
 {% endblock %}
-{% block main %}
+{% block body %}
 
 {# Header #}
 {% include "../../scss/objects/o-header/o-header.twig" %}
@@ -511,7 +513,10 @@
 </footer>
 
 {% endblock %}
-{% block js %}
+
+{% block footerVendorJavascripts %}{% endblock %}
+
+{% block footerJavascripts %}
 <script>
   var swiper = new Swiper('.js-featured-content-swiper', {
     slidesPerView: 3,
