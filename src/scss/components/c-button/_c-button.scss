@@ -1,20 +1,59 @@
 // Button
 //
 // Markup:
-// <a href="#" class="c-button {{modifier_class}}">Button Element</a>
+// <a href="#" class="c-button {{modifier_class}}"> &lt;a&gt; Tag</a>
 // <button class="c-button {{modifier_class}}">Button Element</button>
 // <input class="c-button {{modifier_class}}" type="button" value="Input Button" />
 //
-// :hover - When user hovers over button.
-// :focus - When button is focused.
-// .c-button--small - A small button.
-// .c-button--large - A large button.
 // .c-button--primary - Primary button.
 // .c-button--outline - Outline button.
 // .c-button--ghost - Ghost button.
+// .c-button--small - A small button.
+// .c-button--large - A large button.
 //
 // Styleguide Components.Button
 
+// Primary Button
+//
+// Markup:
+// <a href="#" class="c-button c-button--primary {{modifier_class}}"> &lt;a&gt; Tag</a>
+// <button class="c-button c-button--primary {{modifier_class}}">Button Element</button>
+// <input class="c-button c-button--primary {{modifier_class}}" type="button" value="Input Button" />
+//
+// .c-button--primary:hover - Primary button on hover status.
+// .c-button--primary:focus - Primary button on focus status.
+// .c-button--primary:active - Primary button on active status.
+// .c-button--primary:disabled - Primary button on disabled status.
+//
+// Styleguide Components.Button.primary
+
+// Outline Button
+//
+// Markup:
+// <a href="#" class="c-button c-button--outline {{modifier_class}}"> &lt;a&gt; Tag</a>
+// <button class="c-button c-button--outline {{modifier_class}}">Button Element</button>
+// <input class="c-button c-button--outline {{modifier_class}}" type="button" value="Input Button" />
+//
+// .c-button--outline:hover - Outline button on hover status.
+// .c-button--outline:focus - Outline button on focus status.
+// .c-button--outline:active - Outline button on active status.
+// .c-button--outline:disabled - Outline button on disabled status.
+//
+// Styleguide Components.Button.outline
+
+// Ghost Button
+//
+// Markup:
+// <a href="#" class="c-button c-button--ghost {{modifier_class}}"> &lt;a&gt; Tag</a>
+// <button class="c-button c-button--ghost {{modifier_class}}">Button Element</button>
+// <input class="c-button c-button--ghost {{modifier_class}}" type="button" value="Input Button" />
+//
+// .c-button--ghost:hover - ghost button on hover status.
+// .c-button--ghost:focus - ghost button on focus status.
+// .c-button--ghost:active - ghost button on active status.
+// .c-button--ghost:disabled - ghost button on disabled status.
+//
+// Styleguide Components.Button.ghost
 @import '../../../../node_modules/buttono/buttono';
 
 $buttono-font-family: $g-font-family-base;
